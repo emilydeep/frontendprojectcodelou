@@ -27,6 +27,17 @@
     display: none;
 }
 
+/*  Jumbotron Image */
+.jumbotron {
+    background-image: url('../img/hero.jpeg');
+    background-size: cover;
+}
+
+/*  Service Icon Styling */
+.serviceicon {
+    height: 50%;
+    width: 50%;
+}
 
 /*                   Media Queries                */
 
