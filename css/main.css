@@ -33,11 +33,13 @@
     background-size: cover;
 }
 
-/*  Service Icon Styling */
-.serviceicon {
-    height: 50%;
-    width: 50%;
+
+
+#row{
+    background: #edb83d;
 }
+
+
 
 /*                   Media Queries                */
 
