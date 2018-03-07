@@ -10,8 +10,10 @@
 
 <!--   Top Nav Menu   -->   
     <div class="topnav" id="myTopNav">
-        <img src="img/logo.png" id="logo">
-        <a href= "☰" class="icon">&#9776;</a>   
+        <div class="logowrapper">
+            <img src="img/logo.png" id="logo"/>
+            <span class="icon">☰</span>
+        </div>
         <div class="links">
             <a href="#home" class="homenav">HOME</a>
             <a href="#about" class="aboutnav">ABOUT US</a>
@@ -57,17 +59,55 @@
  
 <!-- About Summary -->
       <div id="row">
-        <div class="col-8"><h2>About Lambert's Auto Body &amp; Paint</h2></div>
+        <div>
+            <h2 class="display-4 text-center">About Lambert's Auto Body &amp; Paint</h2>
+        </div>
         <p>Heave to run a shot across the bow Plate Fleet log reef hulk come about Yellow Jack mizzenmast boom. Cog dead men tell no tales man-of-war grog blossom loaded to the gunwalls bring a spring upon her cable measured fer yer chains league heave down marooned. Bilge water red ensign man-of-war tack splice the main brace chandler provost run a rig Davy Jones' Locker crow's nest.</p>
-        <div class="col-4"></div>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/200x100"></a>
+            <div class="col-4">
+                <a href="https://placeholder.com"><img src="http://via.placeholder.com/200x100"></a>
+            </div>
       </div>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/app.js"></script>
+
+<!-- Business Info -->
+    <div id="hours">
+        <h2 class="display-4">Call or Come See Us!</h2>
+        <h3>Phone</h3>
+        <ul>(502) 459-2639</ul>               
+        <h3>Address</h3>
+        <ul>1400 Belmar Dr, Louisville, KY 40213</ul>
+        <h3>Hours</h3>
+        <ul>Monday - Friday: 7:30a -5:00p</ul>
+        <ul>Closed Saturday &amp; Sunday</ul>
+    </div>   
+<!-- Google Map -->
+    <div id="map">
+            <script>
+                function initMap() {
+                var uluru = {lat: 38.195316, lng: -85.720722};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+                }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGhdNX0T8obuGtoPaD_NUl_tHBr5ao6wQ&callback=initMap">
+            </script>
+        <div id="hours">
+            <h3 class="hours">Call or Come See Us!</h3>
+        </div>
+            
+      </div>
 </body>
 
 <footer>
-    <div><h3>Test</h3>
+    <div><h3>footer</h3>
         <ul>one</ul>
         <ul>two</ul>
 </div>

@@ -1,4 +1,4 @@
-//      Top Nav Mobile Menu     //
-$('.icon').click (function() {
-    $('.links').click();
-});
+// mobile menu drop down
+$('.icon').on('click', (function() {
+    $(".links").toggleClass("visible");
+}));

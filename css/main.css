@@ -49,31 +49,57 @@
     background: #edb83d;
 }
 
+/*  Business Info */
+#hours {
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 0 1em;
+    }
 
 
-/*                   Media Queries                */
+/*  Map */
+#map {
+    flex-flow: column;
+    width: 50%;
+    height: 400px;
+    background-color: grey;
+  }
 
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child)  {display: none;}
-    .topnav a.icon {
-        float: right;
+/* Mobile */
+@media screen and (max-width: 800px) {
+    /* Nav */
+    .topnav {
+        flex-flow: column;
+    }
+
+    .topnav .logowrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em;
+    }
+
+    .topnav .logowrapper span {
+        color: white;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    .topnav .icon {
         display: block;
     }
-}
 
-/*            Hamburger Menu Dropdown              */
-@media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .top.nav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+    .topnav .links {
+        display: none;
+        padding-top: 1em;
     }
 
-    .topnav.reposonsive a {
-        float: none;
+    .topnav .links.visible {
         display: block;
-        text-align: left;
     }
 
+    /* Jumbotron */
+    .jumbotron {
+        border-radius: 0;
+    }
 }
