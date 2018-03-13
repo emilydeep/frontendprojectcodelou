@@ -49,18 +49,19 @@
     background: #edb83d;
 }
 
+
 /*  Business Info */
 #hours {
     flex-flow: column;
-    justify-content: space-between;
     padding: 0 1em;
+    float: right;
     }
 
 
 /*  Map */
 #map {
-    flex-flow: column;
-    width: 50%;
+    flex-flow: row;
+    max-width: 50%;
     height: 400px;
     background-color: grey;
   }
@@ -102,4 +103,13 @@
     .jumbotron {
         border-radius: 0;
     }
+}
+
+/* Helper Classes */
+.block {
+    display: block;
+}
+
+.about-image {
+    max-width: 300px;
 }
