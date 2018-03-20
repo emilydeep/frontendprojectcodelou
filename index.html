@@ -37,19 +37,19 @@
 
 <body>
 <!-- Services Summary Section -->
-    <div class="container pt-1">
+    <div class="container pt-1 services">
         <div class="row">
-          <div class="col-md">
+          <div class="col-md centerColumnHorizontal">
             <img class="img-fluid d-block" src= "img/collision.png"> 
             <h3 class="mb-3 text-center">Collision Repair Shop</h3>
             <p class="text-center">We work with all insurance companies on all makes and models. Our trained professionals will complete your repairs to meet the exact stand and quality of a fresh out of the factory vehicle!</p>
           </div>
-          <div class="col-md">
+          <div class="col-md centerColumnHorizontal">
          <img class="img-fluid" src= "img/repair-2.png"> 
             <h3 class="mb-3 text-center">Full Service Shop</h3>
             <p class="text-center">Our experts will diagnose your vehicle issues from the complex to routine maintenance. We are your one stop shop for car and truck needs. </p>
           </div>
-          <div class="col-md">
+          <div class="col-md centerColumnHorizontal">
             <img class= "img-fluid" src= "img/paint-1.png">              
             <h3 class="mb-3 text-center">Auto Body Pain Shop</h3>
             <p class="text-center">From minor scratches and dents from every day driving to complete collision restoration - our paint technicians will restore your car. We gaurantee our services.</p>
@@ -58,60 +58,73 @@
       </div>
  
 <!-- About Summary -->
-      <div id="row" class="row p-5">
-        <div class="col-md-6">
+      <div id="row" class="row">
+        <div class="col-md-6" class="aboutSection">
             <h2 class="display-4 text-center my-4">About Lambert's Auto Body &amp; Paint</h2>
             <p>Heave to run a shot across the bow Plate Fleet log reef hulk come about Yellow Jack mizzenmast boom. Cog dead men tell no tales man-of-war grog blossom loaded to the gunwalls bring a spring upon her cable measured fer yer chains league heave down marooned. Bilge water red ensign man-of-war tack splice the main brace chandler provost run a rig Davy Jones' Locker crow's nest.</p>
         </div>
         <div class="col-md-6">
-            <div class="">
+            <div class="aboutimg">
                 <img class="mb-5 img-fluid rounded col-6 col-md-12 mx-auto block about-image" src="img/about.jpeg">
             </div>
         </div>
+      </div>
+    
+    <div class="row">
+      <!-- Business Info -->
+      <div id="hours" class="col-12 col-lg-6 order-lg-2">
+          <h2 class="display-4">Call or Come See Us!</h2>
+          <h3 class="info">Address</h3>
+          <ul>1400 Belmar Dr, Louisville, KY 40213</ul>             
+          <h3 class="info">Hours</h3>
+          <ul>Monday - Friday: 7:30a -5:00p</ul>
+          <ul>Closed Saturday &amp; Sunday</ul>
+          <h3 class="info">Phone</h3>
+          <ul>(502)-459-2639</ul> 
+      </div>
+
+      <!-- Google Map -->
+      <div id="map" class="col-12 col-lg-6 order-lg-1">       
+      </div>
     </div>
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script src="js/app.js"></script>
-
-<!-- Business Info -->
-    <div id="hours">
-            <h2 class="display-4">Call or Come See Us!</h2>
-            <h3>Phone</h3>
-            <ul>(502) 459-2639</ul>               
-            <h3>Address</h3>
-            <ul>1400 Belmar Dr, Louisville, KY 40213</ul>
-            <h3>Hours</h3>
-            <ul>Monday - Friday: 7:30a -5:00p</ul>
-            <ul>Closed Saturday &amp; Sunday</ul>
-        </div>  
-
-    <!-- Google Map -->
-        <div id="map">
-                <script>
-                    function initMap() {
-                    var uluru = {lat: 38.195316, lng: -85.720722};
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 14,
-                        center: uluru
-                    });
-                    var marker = new google.maps.Marker({
-                        position: uluru,
-                        map: map
-                    });
-                    }
-                </script>
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGhdNX0T8obuGtoPaD_NUl_tHBr5ao6wQ&callback=initMap">
-                </script>        
-        </div>
 </body>
 
-<footer>
-    <div><h3>footer</h3>
-        <ul>one</ul>
-        <ul>two</ul>
-</div>
-
+<!-- Footer -->
+<footer class="footer">
+     <ul class="nav justify-content-center">
+         <li class="nav-item flex-sm-column">
+             <a class="nav-link" href="#">About Us</a>
+        </li>
+         <li class="nav-item flex-sm-column">
+            <a class="nav-link" href="#">Services</a>
+        </li>
+         <li class="nav-item flex-sm-column">
+             <a class="nav-link" href="#">Specials</a>
+        </li>
+        <li class="nav-item flex-sm-column">
+            <a class="nav-link" href="#">Contact Us</a>
+         </li>
+        </ul>
 </footer>
+  <!-- jQuery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/app.js"></script>
 
-
+  <!-- Google Maps Script -->
+  <script>
+      function initMap() {
+      var uluru = {lat: 38.195316, lng: -85.720722};
+      var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+      });
+      var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+      });
+      }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGhdNX0T8obuGtoPaD_NUl_tHBr5ao6wQ&callback=initMap">
+  </script> 
 </html>

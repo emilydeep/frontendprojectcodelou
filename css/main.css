@@ -49,24 +49,47 @@
     background: #edb83d;
 }
 
+.row {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Services Summary Classes */
+.centerColumnHorizontal {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.services img {
+    height: 200px;
+}
+
+/* About Section Classes */
+.aboutimg {
+    margin-top: 3rem!important;
+}
+.aboutSection {
+    margin-top: 4.5em !important;
+}
 
 /*  Business Info */
 #hours {
     flex-flow: column;
     padding: 0 1em;
     float: right;
+    text-align: center;
+    margin-top: 1.5em !important;
     }
-
 
 /*  Map */
 #map {
-    flex-flow: row;
-    max-width: 50%;
-    height: 400px;
+    min-height: 400px;
     background-color: grey;
   }
-
-/* Mobile */
+  
+/* Mobile Media Queries */
 @media screen and (max-width: 800px) {
     /* Nav */
     .topnav {
@@ -99,11 +122,26 @@
         display: block;
     }
 
-    /* Jumbotron */
-    .jumbotron {
-        border-radius: 0;
+    /* mobile map */
+    #map {
+        max-height: 200px;
+        background-color: grey;
+      }
+
+    /* mobile business info */
+    #hours {
+        text-align: center;
+        font-size: 2em;
+        }
     }
-}
+
+/* Jumbotron */
+.jumbotron {
+    border-radius: 0;
+    }
+
+/* End Media Query  */
+
 
 /* Helper Classes */
 .block {
@@ -112,4 +150,18 @@
 
 .about-image {
     max-width: 300px;
+}
+
+/* footer */
+.footer {
+    background-color: #000b29;  
+}
+
+.footer a {
+    color: #f8f5f2;
+    padding: 16px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
 }
