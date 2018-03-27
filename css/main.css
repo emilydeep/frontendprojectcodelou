@@ -37,6 +37,7 @@
     float: left;
     border-radius: 0.05em;
     block-size: 4em;
+    max-width: 107px;
 }
 
 /*  Jumbotron Image */
@@ -87,9 +88,10 @@
 #map {
     min-height: 400px;
     background-color: grey;
-  }
+}
   
 /* Mobile Media Queries */
+
 @media screen and (max-width: 800px) {
     /* Nav */
     .topnav {
@@ -131,8 +133,8 @@
     /* mobile business info */
     #hours {
         text-align: center;
-        }
     }
+}
 
 /* Jumbotron */
 .jumbotron {

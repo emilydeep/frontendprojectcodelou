@@ -2,7 +2,7 @@
 
 ## Description
 ```
-This a website for a local business, Lambert's Auto Body Shop. They currently do not have a website, so I was building one from scratch to give them the opportunity to be found online. I used jQuery, Bootstrap, and custom CSS to make the website responsive. 
+This a website for a local business, Lambert's Auto Body Shop. They currently do not have a website, so I was building one from scratch to give them the opportunity to be found online. I used jQuery, Bootstrap, and custom CSS to make the website responsive. Works best on Google Chrome. 
 
 ```
 
