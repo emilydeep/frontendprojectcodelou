@@ -124,6 +124,13 @@
         display: block;
     }
 
+    #logo {
+        float: left;
+        border-radius: 0.05em;
+        block-size: 4em;
+        max-height: 106.68px;
+    }
+
     /* mobile map */
     #map {
         max-height: 200px;
